@@ -1,0 +1,52 @@
+[Desktop Entry]
+DefaultProfile=Personal.profile
+
+[DownloadDialog Settings]
+Height 1080=503
+Height 900=485
+Width 1600=700
+Width 1920=700
+
+[Favorite Profiles]
+Favorites=Workflow.profile,Personal.profile
+
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+
+[MainWindow]
+Height 1080=648
+Height 720=670
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAAogAAAHHAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1280=1280
+Width 1920=1280
+Width 2560=1280
+Window-Maximized 1050x1680=true
+Window-Maximized 1080x1920=true
+Window-Maximized 1080x2560=true
+Window-Maximized 480x640=true
+Window-Maximized 600x800=true
+Window-Maximized 720x1280=true
+Window-Maximized 768x1024=true
+Window-Maximized 768x1366=true
+Window-Maximized 768x1368=true
+Window-Maximized 900x1600=true
+eDP HDMI-A-0 Height 1080=838
+eDP HDMI-A-0 Width 1920=1280
+eDP HDMI-A-0 Window-Maximized 1080x1920=true
+eDP HDMI-A-0 Window-Maximized 1080x2560=true
+eDP HDMI-A-0 XPosition=0
+eDP HDMI-A-0 YPosition=1080
+eDP Height 1080=1080
+eDP Width 1920=1920
+eDP Window-Maximized 1080x1920=true
+eDP XPosition=0
+eDP YPosition=0
+
+[Notification Messages]
+CloseAllTabs=true
+ShowPasteUnprintableWarning=true
+
+[TabBar]
+TabBarPosition=Top
