@@ -1,0 +1,3 @@
+[submodule ".tmux/tmux-pop"]
+	path = .tmux/tmux-pop
+	url = https://github.com/roosta/tmux-pop.git
