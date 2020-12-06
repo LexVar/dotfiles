@@ -111,6 +111,12 @@ videowallEnabled=false
 virtual-desktops-only-on-primaryEnabled=false
 windowgeometryEnabled=false
 
+[Script-Parachute]
+animationsDuration=200
+blurBackground=false
+showNotificationWindows=false
+showWindowTitles=false
+
 [TabBox]
 ActivitiesMode=1
 ApplicationsMode=0

@@ -162,7 +162,7 @@ nmap <F9> z=
 imap <F10> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " LaTeX (rubber) macro for compiling
-nnoremap <leader>lc :w<CR>:!make<CR>
+nnoremap <leader>lc :w<CR>:vertical terminal make<CR>
 
 " View PDF macro; '%:r' is current file's root (base) name.
 nnoremap <leader>lv :!okular main.pdf 2> /dev/null &<CR><CR>
