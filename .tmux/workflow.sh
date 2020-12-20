@@ -18,6 +18,5 @@ if [ $? == 1 ]; then
 	tmux new-window -d -a -t workflow:tese -n dsi -c $DSI '/bin/fish'
 	tmux split-window -h -d -t workflow:dsi -c $DSI -b '/bin/fish'
 	tmux split-window -v -d -t workflow:dsi -c $DSI '/bin/fish'
-	tmux new-window -d -a -t workflow:dsi -n misc -c $HOME '/bin/fish'
 	tmux attach -t workflow
 fi
