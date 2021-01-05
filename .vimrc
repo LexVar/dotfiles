@@ -1,6 +1,6 @@
-" if (has("termguicolors"))
-	" set termguicolors
-" endif
+if (has("termguicolors"))
+	set termguicolors
+endif
 
 " Enable 256 colors
 set t_Co=256

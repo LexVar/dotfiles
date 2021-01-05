@@ -15,8 +15,8 @@ if [ $? == 1 ]; then
 	tmux new-window -d -a -t workflow:notes -n tese -c $TESE '/bin/fish'
 	tmux split-window -h -d -t workflow:tese -c $TESE -b '/bin/fish'
 	tmux split-window -v -d -t workflow:tese -c $TESE '/bin/fish'
-	tmux new-window -d -a -t workflow:tese -n dsi -c $DSI '/bin/fish'
-	tmux split-window -h -d -t workflow:dsi -c $DSI -b '/bin/fish'
-	tmux split-window -v -d -t workflow:dsi -c $DSI '/bin/fish'
+	tmux new-window -d -a -t workflow:tese -n paper -c $TESE/notes '/bin/fish'
+	tmux split-window -h -d -t workflow:paper -c $TESE/paper -b '/bin/fish'
+	tmux split-window -v -d -t workflow:paper -c $TESE '/bin/fish'
 	tmux attach -t workflow
 fi

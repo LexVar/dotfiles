@@ -6,14 +6,23 @@ Height 1080=503
 Height 900=485
 Width 1600=700
 Width 1920=700
+eDP Height 1080=503
+eDP Width 1920=700
 
 [Favorite Profiles]
 Favorites=Workflow.profile,Personal.profile
 
 [KonsoleWindow]
+AllowMenuAccelerators=true
 ShowMenuBarByDefault=false
 
 [MainWindow]
+HDMI-A-0 eDP Height 1080=1020
+HDMI-A-0 eDP Width 2560=1280
+HDMI-A-0 eDP Window-Maximized 1080x1920=true
+HDMI-A-0 eDP Window-Maximized 1080x2560=true
+HDMI-A-0 eDP XPosition=0
+HDMI-A-0 eDP YPosition=1080
 Height 1080=648
 Height 720=670
 MenuBar=Disabled
@@ -32,21 +41,27 @@ Window-Maximized 768x1024=true
 Window-Maximized 768x1366=true
 Window-Maximized 768x1368=true
 Window-Maximized 900x1600=true
-eDP HDMI-A-0 Height 1080=838
-eDP HDMI-A-0 Width 1920=1280
+eDP HDMI-A-0 Height 1080=798
+eDP HDMI-A-0 Width 1920=1473
+eDP HDMI-A-0 Width 2560=1473
 eDP HDMI-A-0 Window-Maximized 1080x1920=true
 eDP HDMI-A-0 Window-Maximized 1080x2560=true
-eDP HDMI-A-0 XPosition=0
-eDP HDMI-A-0 YPosition=1080
-eDP Height 1080=1080
-eDP Width 1920=1920
+eDP HDMI-A-0 XPosition=100
+eDP HDMI-A-0 YPosition=32
+eDP Height 1080=648
+eDP Width 1920=1280
 eDP Window-Maximized 1080x1920=true
 eDP XPosition=0
-eDP YPosition=0
+eDP YPosition=32
 
 [Notification Messages]
 CloseAllTabs=true
 ShowPasteUnprintableWarning=true
 
+[SplitView]
+SplitViewVisibility=AlwaysHideSplitHeader
+
 [TabBar]
+CloseTabButton=None
+CloseTabOnMiddleMouseButton=true
 TabBarPosition=Top

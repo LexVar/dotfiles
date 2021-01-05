@@ -2,11 +2,8 @@
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed
 
 [Compositing]
-Backend=OpenGL
-Enabled=true
-GLCore=true
-GLPreferBufferSwap=a
-GLTextureFilter=1
+Backend=XRender
+GLTextureFilter=0
 HiddenPreviews=5
 OpenGLIsUnsafe=false
 WindowsBlockCompositing=true
@@ -100,9 +97,7 @@ LaunchCounts=
 [Plugins]
 ParachuteEnabled=true
 highlightwindowEnabled=true
-kwin4_effect_squashEnabled=false
 kwinOverviewEnabled=false
-magiclampEnabled=true
 minimizeallEnabled=false
 quick-tile-2Enabled=false
 screenedgeEnabled=false
@@ -114,6 +109,9 @@ windowgeometryEnabled=false
 [Script-Parachute]
 animationsDuration=200
 blurBackground=false
+desktopsBarPlacement=0
+searchMethod=1
+showDesktopShadows=true
 showNotificationWindows=false
 showWindowTitles=false
 
@@ -156,7 +154,7 @@ ActiveMouseScreen=false
 AutoRaise=false
 AutoRaiseInterval=750
 BorderSnapZone=10
-BorderlessMaximizedWindows=true
+BorderlessMaximizedWindows=false
 CenterSnapZone=0
 ClickRaise=true
 DelayFocusInterval=300
