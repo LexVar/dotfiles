@@ -2,6 +2,7 @@
 
 # See anacron(8) and anacrontab(5) for details.
 
+# @hourly /usr/sbin/anacron -s -t $HOME/.anacron/etc/anacrontab -S $HOME/.anacron/spool
 SHELL=/bin/bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
 MAILTO="avalente@protonmail.com"
