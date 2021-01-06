@@ -1,0 +1,6 @@
+#!/bin/bash
+
+killall korgac
+killall akonadi_ical_resource
+killall mysqld
+killall korganizer
