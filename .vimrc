@@ -117,6 +117,7 @@ set undoreload=70
 
 " don't connect to clipboard
 " set clipboard=exclude:.*
+" set clipboard=unnamedplus
 
 " copy to system clipboard with ctrl-c, paste with ctrl-v
 :inoremap <C-v> <ESC>"+pa

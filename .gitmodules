@@ -34,3 +34,6 @@
 [submodule "/home/avalente/.local/share/omf"]
 	path = /home/avalente/.local/share/omf
 	url = https://github.com/oh-my-fish/oh-my-fish.git
+[submodule "/home/avalente/.tmux/tmux-better-mouse-mode"]
+	path = /home/avalente/.tmux/tmux-better-mouse-mode
+	url = https://github.com/NHDaly/tmux-better-mouse-mode
