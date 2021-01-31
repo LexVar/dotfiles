@@ -14,6 +14,11 @@ sudo cpupower frequency-set --max 1700000
 
 echo 'powersupersave' | sudo tee /sys/module/pcie_aspm/parameters/policy
 
+# Disable bluetooth powersave
+/usr/sbin/hciconfig hci0 up &> /dev/null &
+# Disable USB device autosuspend
+echo 'on' > '/sys/bus/usb/devices/usb2/power/control';
+
 # sudo /home/avalente/Documents/Scripts/disable_services
 
 # sudo powertop --auto-tune
