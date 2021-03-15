@@ -19,6 +19,10 @@ echo 'powersupersave' | sudo tee /sys/module/pcie_aspm/parameters/policy
 # Disable USB device autosuspend
 echo 'on' > '/sys/bus/usb/devices/usb2/power/control';
 
+# amdgpu dpm settings
+echo 'battery' > /sys/class/drm/card0/device/power_dpm_state
+echo 'low' > /sys/class/drm/card0/device/power_dpm_force_performance_level
+
 # sudo /home/avalente/Documents/Scripts/disable_services
 
 # sudo powertop --auto-tune

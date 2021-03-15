@@ -1,10 +1,11 @@
 [$Version]
-update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage
 
 [Compositing]
-Backend=XRender
+GLCore=true
 GLTextureFilter=0
 HiddenPreviews=5
+LatencyPolicy=Low
 OpenGLIsUnsafe=false
 WindowsBlockCompositing=true
 XRenderSmoothScale=false
@@ -12,10 +13,19 @@ XRenderSmoothScale=false
 [Desktops]
 Id_1=3c0657f1-ef9c-47bf-80be-40a1f6ff1306
 Id_2=e56588ae-0f56-4749-9587-c59c49220f58
-Id_3=8d1bbf49-f965-45c9-89db-e9a2238506fe
-Id_4=1972c8bf-5910-4267-a613-cd6be49dcbf6
-Number=4
+Id_3=8d6ade02-a802-4268-9ada-5bff0e8937dd
+Number=3
 Rows=1
+
+[DrmOutputs][7730fe52a9][02df324047]
+Mode=1920x1080_59934
+Scale=1
+Transform=normal
+
+[DrmOutputs][7730fe52a9][b135ff9940]
+Mode=2560x1080_60000
+Scale=1
+Transform=normal
 
 [Effect-CoverSwitch]
 TabBox=false
@@ -40,6 +50,9 @@ TouchBorderActivate=9
 TabBox=false
 TabBoxAlternative=false
 
+[Effect-MagicLamp]
+AnimationDuration=260
+
 [Effect-PresentWindows]
 AllowClosingWindows=false
 BorderActivate=9
@@ -55,6 +68,7 @@ TouchBorderActivateClass=9
 [Effect-Slide]
 Duration=250
 HorizontalGap=5
+SlideBackground=false
 VerticalGap=0
 
 [ElectricBorders]
@@ -66,6 +80,9 @@ Right=None
 Top=None
 TopLeft=None
 TopRight=None
+
+[KDE]
+AnimationDurationFactor=0.25
 
 [MouseBindings]
 CommandActiveTitlebar1=Raise
@@ -97,7 +114,9 @@ LaunchCounts=
 [Plugins]
 ParachuteEnabled=true
 highlightwindowEnabled=true
+kwin4_effect_squashEnabled=false
 kwinOverviewEnabled=false
+magiclampEnabled=true
 minimizeallEnabled=false
 quick-tile-2Enabled=false
 screenedgeEnabled=false
@@ -120,6 +139,8 @@ ActivitiesMode=1
 ApplicationsMode=0
 BorderActivate=9
 BorderAlternativeActivate=9
+DesktopLayout=org.kde.breeze.desktop
+DesktopListLayout=org.kde.breeze.desktop
 DesktopMode=1
 HighlightWindows=false
 LayoutName=big_icons
@@ -185,3 +206,6 @@ BorderSize=None
 BorderSizeAuto=false
 ButtonsOnLeft=N
 ButtonsOnRight=IAX
+ShowToolTips=false
+library=org.kde.breeze
+theme=Breeze
