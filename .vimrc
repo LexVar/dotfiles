@@ -47,6 +47,14 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:vimwiki_list = [{'path': '~/Documents/Scripts/vimwiki/',
 		      \ 'syntax': 'markdown', 'ext': '.md'}]
 
+" Turn on folding
+let g:vimwiki_folding = 'expr'
+" Open files with 2 or higher headers folded
+set foldlevel=2
+
+" open nerdtree with ctrl + t 
+nnoremap <C-s> :NERDTreeToggle<CR>
+
 set tabstop=8
 set softtabstop=8
 set shiftwidth=8

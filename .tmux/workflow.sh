@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# source path variables: TESE, SCRIPTS, DSI, etc..
+# source path variables
 source ~/.user_aliases
 
 # try to attch to existing session named workflow
@@ -12,11 +12,12 @@ if [ $? == 1 ]; then
 	tmux split-window -h -d -t workflow:notes -c $HOME/Documents/Scripts/vimwiki -b '/bin/fish -c "sleep 1; vim index.md"'
 	tmux split-window -v -d -t workflow:notes -c $SCRIPTS '/bin/fish'
 	tmux resize-pane -L 29
-	tmux new-window -d -a -t workflow:notes -n tese -c $DOCS/Projects '/bin/fish'
-	tmux split-window -h -d -t workflow:tese -c $DOCS/Projects -b '/bin/fish'
-	tmux split-window -v -d -t workflow:tese -c $DOCS/Projects '/bin/fish'
-	tmux new-window -d -a -t workflow:tese -n paper -c $TESE/notes '/bin/fish'
-	tmux split-window -h -d -t workflow:paper -c $TESE/paper -b '/bin/fish'
-	tmux split-window -v -d -t workflow:paper -c $TESE/paper '/bin/fish'
+	tmux new-window -d -a -t workflow:notes -n work -c $HOME/Documents/Projects '/bin/fish'
+	tmux split-window -h -d -t workflow:work -c $HOME/Documents/Projects -b '/bin/fish'
+	tmux split-window -v -d -t workflow:work -c $HOME/Documents/Projects '/bin/fish'
+	tmux new-window -d -a -t workflow:work -n paper -c $TESE/notes '/bin/fish -c "sleep 1; vim ./Tese.md"'
+	tmux split-window -h -d -t workflow:paper -c $TESE/paper/latex -b '/bin/fish'
+	tmux split-window -v -d -t workflow:paper -c $TESE/paper/latex '/bin/fish'
+	tmux resize-pane -t workflow:paper -D 7
 	tmux attach -t workflow
 fi
