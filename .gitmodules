@@ -1,9 +1,9 @@
 [submodule ".tmux/tmux-pop"]
 	path = .tmux/tmux-pop
 	url = https://github.com/roosta/tmux-pop.git
-[submodule ".vim/pack/plugins/start/ale"]
-	path = .vim/pack/plugins/start/ale
-	url = https://github.com/dense-analysis/ale.git
+[submodule ".tmux/tmux-better-mouse-mode"]
+	path = .tmux/tmux-better-mouse-mode
+	url = https://github.com/NHDaly/tmux-better-mouse-mode.git
 [submodule ".vim/pack/plugins/start/delimitMate"]
 	path = .vim/pack/plugins/start/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
@@ -25,15 +25,18 @@
 [submodule ".vim/pack/plugins/start/vim-surround"]
 	path = .vim/pack/plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule ".vim/pack/plugins/start/vimtex"]
-	path = .vim/pack/plugins/start/vimtex
-	url = https://github.com/lervag/vimtex.git
 [submodule ".vim/pack/plugins/start/vimwiki"]
 	path = .vim/pack/plugins/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
 [submodule ".local/share/omf"]
 	path = .local/share/omf
 	url = https://github.com/oh-my-fish/oh-my-fish.git
-[submodule ".tmux/tmux-better-mouse-mode"]
-	path = .tmux/tmux-better-mouse-mode
-	url = https://github.com/NHDaly/tmux-better-mouse-mode
+[submodule ".vim/pack/plugins/start/nerdtree"]
+	path = .vim/pack/plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule ".vim/pack/plugins/start/vim-devicons"]
+	path = .vim/pack/plugins/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule ".vim/pack/plugins/start/ycm"]
+	path = .vim/pack/plugins/start/ycm
+	url = https://github.com/ycm-core/YouCompleteMe.git

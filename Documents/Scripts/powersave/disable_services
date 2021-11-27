@@ -1,2 +1,0 @@
-sudo systemctl mask ModemManager.service  
-sudo systemctl mask cups.service

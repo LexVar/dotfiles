@@ -1,0 +1,13 @@
+{
+    "window.menuBarVisibility": "hidden",
+    "workbench.colorTheme": "Nord",
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "material-icon-theme",
+    "window.customMenuBarAltFocus": false,
+    "redhat.telemetry.enabled": false,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+	"vim.vimrc.enable": true,
+    "vim.vimrc.path": "~/.vimrc"
+}

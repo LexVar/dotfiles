@@ -14,7 +14,8 @@ XRenderSmoothScale=false
 Id_1=3c0657f1-ef9c-47bf-80be-40a1f6ff1306
 Id_2=e56588ae-0f56-4749-9587-c59c49220f58
 Id_3=8d6ade02-a802-4268-9ada-5bff0e8937dd
-Number=3
+Id_4=3c982abc-2d22-4971-8c06-59a1c6b664b6
+Number=4
 Rows=1
 
 [DrmOutputs][7730fe52a9][02df324047]
@@ -52,6 +53,9 @@ TabBoxAlternative=false
 
 [Effect-MagicLamp]
 AnimationDuration=260
+
+[Effect-Overview]
+LayoutMode=0
 
 [Effect-PresentWindows]
 AllowClosingWindows=false
@@ -106,7 +110,7 @@ CommandWindowWheel=Scroll
 Active=true
 LatitudeAuto=40.0932
 LongitudeAuto=-8.3326
-NightTemperature=4700
+NightTemperature=3800
 
 [PlasmaRunnerManager]
 LaunchCounts=
@@ -118,6 +122,7 @@ kwin4_effect_squashEnabled=false
 kwinOverviewEnabled=false
 magiclampEnabled=true
 minimizeallEnabled=false
+overviewEnabled=true
 quick-tile-2Enabled=false
 screenedgeEnabled=false
 synchronizeskipswitcherEnabled=false
