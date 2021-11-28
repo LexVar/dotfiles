@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo 'Power Save Script!'
+if [ "$(id -u)" != "0" ]; then
+	echo "This script must be run as root" 1>&2
+	exit 1
+fi
+
+if [ -z $1 ]
+then
+	echo "Usage: ./powersave (on/off)"
+	exit 1
+fi
+
+if [ "$1" = "on" ]
+then
+	echo "Turning power saving options on.."
+
+	# Run onpowersave script
+	onpowersave
+
+elif [ "$1" = "off" ]
+then
+
+	echo "Turning power saving options off.."
+
+	# Run offpowersave script
+	offpowersave
+
+else
+	echo "Only (on/off) is allowed"
+fi
