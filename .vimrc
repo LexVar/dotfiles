@@ -44,11 +44,19 @@ let g:NERDToggleCheckAllLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 " prefer to use markdown files in vimwiki
-let g:vimwiki_list = [{'path': '$VIMWIKI',
-		      \ 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{
+	\ 'path': '$VIMWIKI',
+	\ 'template_path': '$VIMWIKI/templates/',
+	\ 'template_default': 'default',
+	\ 'syntax': 'markdown',
+	\ 'ext': '.md',
+	\ 'path_html': '$VIMWIKI/site_html/',
+	\ 'custom_wiki2html': 'vimwiki_markdown',
+	\ 'template_ext': '.tpl'}]
 
 " Turn on folding
 let g:vimwiki_folding = 'expr'
+
 " Open files with 2 or higher headers folded
 set foldlevel=4
 
