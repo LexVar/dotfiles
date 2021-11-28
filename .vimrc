@@ -44,20 +44,20 @@ let g:NERDToggleCheckAllLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 " prefer to use markdown files in vimwiki
-let g:vimwiki_list = [{'path': '~/Documents/Scripts/vimwiki/',
+let g:vimwiki_list = [{'path': '$VIMWIKI',
 		      \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " Turn on folding
 let g:vimwiki_folding = 'expr'
 " Open files with 2 or higher headers folded
-set foldlevel=2
+set foldlevel=4
 
 " open nerdtree with ctrl + t 
 nnoremap <C-s> :NERDTreeToggle<CR>
 
-set tabstop=8
-set softtabstop=8
-set shiftwidth=8
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set noexpandtab
 
 " set absolute numbers, disable relative numbers

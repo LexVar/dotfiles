@@ -1,0 +1,33 @@
+[General]
+FreeFloating=true
+
+[Plugins]
+CharacterRunnerEnabled=false
+DictionaryEnabled=false
+Kill RunnerEnabled=true
+PIM Contacts Search RunnerEnabled=false
+PowerDevilEnabled=true
+Spell CheckerEnabled=false
+appstreamEnabled=false
+baloosearchEnabled=false
+bookmarksEnabled=true
+browserhistoryEnabled=false
+browsertabsEnabled=true
+calculatorEnabled=true
+desktopsessionsEnabled=false
+katesessionsEnabled=false
+konsoleprofilesEnabled=true
+krunner_systemsettingsEnabled=true
+kwinEnabled=true
+locationsEnabled=true
+org.kde.activities2Enabled=false
+org.kde.datetimeEnabled=false
+org.kde.windowedwidgetsEnabled=false
+placesEnabled=true
+plasma-desktopEnabled=true
+recentdocumentsEnabled=true
+servicesEnabled=true
+shellEnabled=true
+unitconverterEnabled=true
+webshortcutsEnabled=false
+windowsEnabled=true
