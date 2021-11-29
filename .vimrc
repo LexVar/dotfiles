@@ -184,26 +184,28 @@ nnoremap <leader>lc :w<CR>:vertical terminal make<CR>
 " View PDF macro; '%:r' is current file's root (base) name.
 nnoremap <leader>lv :!okular main.pdf 2> /dev/null &<CR><CR>
 
-let g:vimtex_fold_enabled = 1
-let g:tex_flavor = 'latex'
+" SuperTab conf
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
+" ------------ OLD LATEX CONFIG ------------------
+" let g:vimtex_fold_enabled = 1
+" let g:tex_flavor = 'latex'
 
 " Enable completion where available.
 " This setting must be set before ALE is loaded.
 "
 " You should not turn this setting on if you wish to use ALE as a completion
 " source for other completion plugins, like Deoplete.
-let g:ale_completion_enabled = 1
+" let g:ale_completion_enabled = 1
 
 " Write this in your vimrc file
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_insert_leave = 0
+" let g:ale_lint_on_text_changed = 'never'
+" let g:ale_lint_on_insert_leave = 0
 " You can disable this option too
 " if you don't want linters to run on opening a file
 " let g:ale_lint_on_enter = 0
 
-set omnifunc=ale#completion#OmniFunc
-let g:ale_completion_autoimport = 1
-
-" SuperTab conf
-let g:SuperTabContextDefaultCompletionType = "<c-n>"
-let g:SuperTabDefaultCompletionType = "<c-n>"
+" set omnifunc=ale#completion#OmniFunc
+" let g:ale_completion_autoimport = 1
+" ------------ ---------------- ------------------
