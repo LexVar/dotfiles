@@ -39,6 +39,8 @@ alias workflow="~/.tmux/workflow.sh"
 alias brave-browser-stable="/usr/bin/brave-browser-stable --force-device-scale-factor"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias vimwiki-git='/usr/bin/git --git-dir=$VIMWIKI/.vimwiki/ --work-tree=$VIMWIKI'
+
 ## Git Aliases
 alias git-log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 

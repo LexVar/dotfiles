@@ -1,5 +1,10 @@
 .vim/undodir
 .vim/spell
 .aws/
+.docker/
+.ssh/
+.terraform.d/
+.vagrant.d/
 .bash_history
 .local/share/fish
+.anacront/etc/spool/*

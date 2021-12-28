@@ -9,5 +9,11 @@
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
 	"vim.vimrc.enable": true,
-    "vim.vimrc.path": "~/.vimrc"
+    "vim.vimrc.path": "~/.vimrc",
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": false,
+    "julia.enableCrashReporter": false
 }

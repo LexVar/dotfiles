@@ -1,0 +1,11 @@
+#!/usr/bin/sh
+
+# tlp - systemd suspend/resume hook
+#
+# Copyright (c) 2021 Thomas Koch <linrunner at gmx.net> and others.
+# This software is licensed under the GPL v2 or later.
+
+case $1 in
+    pre) sudo tlp setcharge BAT0 1;;
+    post) ;;
+esac

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+/usr/local/bin/bios_power_mode EXTREME_PERFORMANCE
+
+tuned-adm profile desktop
+
+cpupower frequency-set --governor performance
+
+echo high | sudo tee /sys/class/drm/card0/device/power_dpm_force_performance_level
+echo 'performance' | sudo tee /sys/module/pcie_aspm/parameters/policy

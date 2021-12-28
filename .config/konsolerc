@@ -19,11 +19,14 @@ Favorites=Workflow.profile,Personal.profile
 
 [FileDialogSize]
 eDP HDMI-A-0 Height 1080=631
+eDP HDMI-A-0 Height 1792x1120=620
+eDP HDMI-A-0 Width 1792x1120=916
 eDP HDMI-A-0 Width 1920=980
 
 [KFileDialog Settings]
-Recent Files[$e]=konsole.css,file:$HOME/konsole.css
-Recent URLs[$e]=file:$HOME/
+Recent Files[$e]=konsole.css,file:$HOME/.konsole/konsole.json
+Recent URLs[$e]=file:$HOME/.konsole/,file:$HOME/,file:$HOME/Documents/
+detailViewIconSize=16
 iconViewIconSize=43
 
 [KonsoleWindow]
@@ -31,6 +34,7 @@ AllowMenuAccelerators=true
 ShowMenuBarByDefault=false
 
 [MainWindow]
+HDMI-A-0 Window-Maximized 2048x864=true
 HDMI-A-0 Window-Maximized 2560x1080=true
 HDMI-A-0 eDP Height 1080=1080
 HDMI-A-0 eDP Height 1920x1080=1080
@@ -49,6 +53,7 @@ HDMI-A-1 eDP-1 Width 1920x1080=1280
 Height 1080=648
 Height 720=670
 MenuBar=Disabled
+RestorePositionForNextInstance=false
 State=AAAA/wAAAAD9AAAAAAAABKUAAAH/AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIAAAAAAP////8AAAAAAAAAAA==
 StatusBar=Disabled
 ToolBarsMovable=Disabled
@@ -66,46 +71,51 @@ Window-Maximized 768x1366=true
 Window-Maximized 768x1368=true
 Window-Maximized 900x1600=true
 eDP HDMI-A-0 Height 1080=1022
-eDP HDMI-A-0 Height 1792x1120=709
+eDP HDMI-A-0 Height 1792x1120=1066
 eDP HDMI-A-0 Height 1920x1080=1022
-eDP HDMI-A-0 Height 2048x864=709
+eDP HDMI-A-0 Height 2048x864=836
 eDP HDMI-A-0 Height 2560x1080=1022
-eDP HDMI-A-0 Width 1792x1120=1194
+eDP HDMI-A-0 Width 1792x1120=1792
 eDP HDMI-A-0 Width 1920=960
 eDP HDMI-A-0 Width 1920x1080=960
-eDP HDMI-A-0 Width 2048x864=1194
+eDP HDMI-A-0 Width 2048x864=1792
 eDP HDMI-A-0 Width 2560=1920
 eDP HDMI-A-0 Width 2560x1080=1920
 eDP HDMI-A-0 Window-Maximized 1080x1920=true
+eDP HDMI-A-0 Window-Maximized 1536x864=true
 eDP HDMI-A-0 Window-Maximized 1536x960=true
 eDP HDMI-A-0 Window-Maximized 1920x1080=true
 eDP HDMI-A-0 Window-Maximized 640x480=true
 eDP HDMI-A-0 XPosition=80
-eDP HDMI-A-0 XPosition 1792x1120=181
+eDP HDMI-A-0 XPosition 1792x1120=307
 eDP HDMI-A-0 XPosition 1920x1080=80
+eDP HDMI-A-0 XPosition 2048x864=0
 eDP HDMI-A-0 XPosition 2560x1080=228
 eDP HDMI-A-0 YPosition=1080
-eDP HDMI-A-0 YPosition 1792x1120=1108
+eDP HDMI-A-0 YPosition 1792x1120=1712
 eDP HDMI-A-0 YPosition 1920x1080=1080
+eDP HDMI-A-0 YPosition 2048x864=0
 eDP HDMI-A-0 YPosition 2560x1080=58
 eDP Height 1080=681
 eDP Height 1493x933=511
-eDP Height 1792x1120=1064
+eDP Height 1792x1120=1066
 eDP Height 1920x1080=1022
 eDP Width 1493x933=1189
 eDP Width 1792x1120=896
 eDP Width 1920=1280
 eDP Width 1920x1080=960
 eDP Window-Maximized 1080x1920=true
+eDP Window-Maximized 1536x864=true
+eDP Window-Maximized 1536x960=true
 eDP Window-Maximized 1792x1120=true
 eDP Window-Maximized 1920x1080=true
 eDP XPosition=0
 eDP XPosition 1493x933=133
-eDP XPosition 1792x1120=242
+eDP XPosition 1792x1120=0
 eDP XPosition 1920x1080=0
 eDP YPosition=0
 eDP YPosition 1493x933=108
-eDP YPosition 1792x1120=204
+eDP YPosition 1792x1120=0
 eDP YPosition 1920x1080=0
 
 [Notification Messages]
@@ -120,4 +130,4 @@ CloseTabButton=None
 CloseTabOnMiddleMouseButton=true
 TabBarPosition=Top
 TabBarUseUserStyleSheet=true
-TabBarUserStyleSheetFile=file:///home/avalente/konsole.css
+TabBarUserStyleSheetFile=file:///home/avalente/.konsole/konsole.css

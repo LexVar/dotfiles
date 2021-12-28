@@ -11,7 +11,7 @@ if [ $? == 1 ]; then
 	tmux new-session -d -s workflow -n notes -c $HOME '/bin/fish'
 	tmux split-window -h -d -t workflow:notes -c $VIMWIKI -b '/bin/fish -c "sleep 1; vim index.md"'
 	tmux split-window -v -d -t workflow:notes -c $SCRIPTS '/bin/fish'
-	tmux resize-pane -L 29
+	tmux resize-pane -L 27
 	tmux new-window -d -a -t workflow:notes -n work -c $HOME/Documents/Projects '/bin/fish'
 	tmux split-window -h -d -t workflow:work -c $HOME/Documents/Projects -b '/bin/fish'
 	tmux split-window -v -d -t workflow:work -c $HOME/Documents/Projects '/bin/fish'

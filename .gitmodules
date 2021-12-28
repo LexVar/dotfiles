@@ -43,3 +43,6 @@
 [submodule ".bin/ideapad"]
 	path = .bin/ideapad
 	url = https://github.com/LexVar/ideapad_bios_scripts.git
+[submodule ".bin/backup"]
+	path = .bin/backup
+	url = https://github.com/LexVar/remote_backup_scripts.git

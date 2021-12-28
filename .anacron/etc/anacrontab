@@ -10,19 +10,17 @@ MAILTO="avalente@protonmail.com"
 # the maximal random delay added to the base delay of the jobs
 RANDOM_DELAY=5
 # the jobs will be started during the following hours only
-START_HOURS_RANGE=18-24
-
-# Backups all documents encrypted every day
-#2	15	docs.backup	remote-encrypt-backup documents $HOME/Documents rclone://remote:Duplicity/Documents 3M
+START_HOURS_RANGE=10-24
 
 # Backup keepass database daily
 @daily	0	keepass.backup	remote-plain-backup keepass	$HOME/Documents/KeePass remote:KeePass
 
 # Backup critical work files daily - no encryption
-# @daily	5	dsi.backup	remote-plain-backup plaintext $HOME/Documents/DSI remote:Documents/DSI
-# @daily	5	tese.backup	remote-plain-backup plaintext $HOME/Documents/MEIC/Tese remote:Documents/Tese
-@daily  5	notes.backup	remote-plain-backup plaintext $VIMWIKI remote:Documents/Notes
-# @daily	5	projects.backup	remote-plain-backup plaintext $HOME/Documents/Projects	remote:Documents/Projects
+@daily  5	notes.backup	remote-plain-backup plaintext $VIMWIKI remote:ideapad/vimwiki
+@daily	5	projects.backup	remote-plain-backup plaintext $HOME/Documents/Projects	remote:ideapad/Projects
+
+# Backups all documents encrypted every day
+# 2	15	docs.backup	remote-encrypt-backup documents $HOME/Documents rclone://remote:ideapad/Documents 3M
 
 # Backup Configuration files every 2 weeks
 # 14	40	etc.backup	remote-encrypt-backup etc	/etc/	Duplicity/etc	1Y

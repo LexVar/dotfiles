@@ -1,0 +1,26 @@
+/* QWidget, QTabWidget::pane, QTabWidget::tab-bar { background-color: #2e3440; } */
+QTabBar,
+QTabBar::tab
+{
+    font-family: "JetBrains Mono Medium";
+    font-size: 17px;
+    height: 20px;
+    padding: 1px;
+    border: 0px;
+    align: center;
+    min-width: 90px;
+    border-bottom: 1px #2e3440;
+    background-color: #2e3440;
+    color: #e4e8ed;
+}
+
+QTabBar::tab:selected
+{
+	font-weight: normal;
+    background-color: #88c0d0;
+    color: #2e3440;
+    border: 1px;
+    /* border-bottom-right-radius: 1px; */
+    /* border-bottom-left-radius: 1px; */
+    /* background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2e3440, stop: 0.85 #2e3440, stop: 1 palette(highlight)); */
+}
