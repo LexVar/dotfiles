@@ -1,4 +1,10 @@
 /* QWidget, QTabWidget::pane, QTabWidget::tab-bar { background-color: #2e3440; } */
+QTabWidget::tab-bar,
+QTabWidget::pane
+{
+	background-color: #2e3440;
+}
+
 QTabBar,
 QTabBar::tab
 {

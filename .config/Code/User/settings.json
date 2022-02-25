@@ -8,12 +8,23 @@
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
-	"vim.vimrc.enable": true,
-    "vim.vimrc.path": "~/.vimrc",
+    "vim.vimrc.path": "$HOME/.vimrc",
     "terminal.integrated.commandsToSkipShell": [
         "language-julia.interrupt"
     ],
     "julia.symbolCacheDownload": true,
     "julia.enableTelemetry": false,
-    "julia.enableCrashReporter": false
+    "julia.enableCrashReporter": false,
+    "vim.vimrc.enable": true,
+    "editor.lineNumbers": "relative",
+    "python.analysis.completeFunctionParens": true,
+    "python.autoComplete.extraPaths": [
+        "/usr/lib64/python3.10/site-packages",
+        "/home/avalente/.local/lib/python3.10/site-packages/"
+    ],
+    "python.analysis.extraPaths": [
+        "/usr/lib64/python3.10/site-packages",
+        "/home/avalente/.local/lib/python3.10/site-packages/"
+    ],
+    "workbench.editor.untitled.hint": "hidden"
 }

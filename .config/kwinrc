@@ -110,7 +110,7 @@ CommandWindowWheel=Scroll
 Active=true
 LatitudeAuto=40.0932
 LongitudeAuto=-8.3326
-NightTemperature=3800
+NightTemperature=3700
 
 [PlasmaRunnerManager]
 LaunchCounts=
@@ -118,6 +118,7 @@ LaunchCounts=
 [Plugins]
 ParachuteEnabled=true
 highlightwindowEnabled=true
+kwin-script-tilingEnabled=false
 kwin4_effect_squashEnabled=false
 kwinOverviewEnabled=false
 magiclampEnabled=true
@@ -192,7 +193,6 @@ ElectricBorderTiling=true
 ElectricBorders=0
 FocusPolicy=ClickToFocus
 FocusStealingPreventionLevel=1
-GeometryTip=false
 HideUtilityWindowsForInactive=true
 MaximizeButtonLeftClickCommand=Maximize
 MaximizeButtonMiddleClickCommand=Maximize (vertical only)
@@ -202,7 +202,6 @@ Placement=Cascade
 SeparateScreenFocus=false
 ShadeHover=false
 ShadeHoverInterval=250
-SnapOnlyWhenOverlapping=false
 TitlebarDoubleClickCommand=Maximize
 WindowSnapZone=10
 

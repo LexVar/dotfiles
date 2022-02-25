@@ -3,8 +3,6 @@ export DOCS=$HOME/Documents
 
 # Vimwiki directory
 export VIMWIKI=$HOME/vimwiki
-# Custom Scripts directory
-export SCRIPTS=$HOME/Documents/Scripts
 
 # work school directory
 export WORK=$DOCS/MEIC
@@ -13,9 +11,6 @@ export DSI=$DOCS/DSI
 export MEIC=""
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
-
-# PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
-# GEM_PATH="$HOME/.gem/ruby/gem:$GEM_PATH"
 
 alias docs="cd $DOCS"
 
@@ -30,16 +25,13 @@ alias vim=/usr/bin/vimx
 
 alias getsong="youtube-dl -x --audio-quality 0"
 
-#alias pistream=ssh -i ~/.ssh/ssh_key pi@raspberrypi omxplayer
-#alias killstream=ssh -i ~/.ssh/ssh_key pi@raspberrypi 'pkill omxplayer'
-
 alias open="xdg-open 2> /dev/null"
 
 alias workflow="~/.tmux/workflow.sh"
 alias brave-browser-stable="/usr/bin/brave-browser-stable --force-device-scale-factor"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-alias vimwiki-git='/usr/bin/git --git-dir=$VIMWIKI/.vimwiki/ --work-tree=$VIMWIKI'
+alias vimwikifiles='/usr/bin/git --git-dir=$VIMWIKI/.vimwiki/ --work-tree=$VIMWIKI'
 
 ## Git Aliases
 alias git-log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -47,7 +39,6 @@ alias git-log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cre
 alias bfg="java -jar /usr/local/bin/bfg*.jar"
 
 # QR Code
-# alias zbarimg="scan-qrcode"
 alias scan-qrcode=zbarimg
 
 export PULSE_LATENCY_MSEC=60
@@ -58,7 +49,6 @@ export XDG_DATA_DIRS="/home/avalente/.local/share/flatpak/exports/share:/var/lib
 # mp4grep
 export MP4GREP_CACHE=/opt/mp4grep-0.1.0/.mp4grep_cache
 export MP4GREP_MODEL=/opt/mp4grep-0.1.0/model
-# export PATH=$PATH:/opt/mp4grep-0.1.0/bin
 
 export PLASMA_USE_QT_SCALING=1
 set PLASMA_USE_QT_SCALING 1
@@ -66,4 +56,3 @@ set PLASMA_USE_QT_SCALING 1
 # ----------------------
 # ----- MACHINES -------
 # ----------------------
-alias sbs-alerod="ssh -i ~/.ssh/ssh_key 'sbs-alerod/alexandre rodrigues'@192.168.1.88"

@@ -1,6 +1,6 @@
-if (has("termguicolors"))
-	set termguicolors
-endif
+" if (has("termguicolors"))
+"     set termguicolors
+" endif
 
 " Enable 256 colors
 set t_Co=256
@@ -158,7 +158,8 @@ nnoremap <Leader><Space> :noh<CR>
 nmap <Left> gT
 nmap <Right> gt
 
-map <C-t> :tabnew<CR>:Files<CR>
+" map <C-t> :tabnew<CR>:Files<CR>
+map <C-t> :tabnew<CR>
 
 " Create new tab with no name
 map <Leader>tt :tabedit<CR>

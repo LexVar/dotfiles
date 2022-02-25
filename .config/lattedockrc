@@ -26,15 +26,19 @@ sortColumn=2
 sortOrder=0
 windowSize=980,630
 
+[Open-with settings]
+CompletionMode=1
+History=vlc
+
 [PIMEventsPlugin]
-calendars=52
+calendars=52,63
 
 [PlasmaThemeExtended]
 outlineWidth=1
 
 [ScreenConnectors]
 10=eDP:::0,0 1792x1120
-11=HDMI-A-0:::2240,0 2048x864
+11=HDMI-A-0:::0,0 2048x864
 12=eDP-1:::0,0 1792x1120
 13=HDMI-A-1:::0,0 2560x1080
 
