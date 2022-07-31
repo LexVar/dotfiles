@@ -7,18 +7,21 @@ tuned-adm profile balanced
 # Set cpu governor to powersave
 cpupower frequency-set --governor schedutil
 
-# Turn off for steelseries mouse
-echo 'on' > '/sys/bus/usb/devices/1-2/power/control';
-
-# disable usb autosuspend
+# Turn off powersave for bluetooth mouse and usb devices
+echo 'on' > '/sys/bus/usb/devices/3-4/power/control';
+echo 'on' > '/sys/bus/usb/devices/1-2/power/control'
+echo 'on' > '/sys/bus/usb/devices/usb4/power/control';
+echo 'on' > '/sys/bus/usb/devices/usb3/power/control';
 echo 'on' > '/sys/bus/usb/devices/usb2/power/control';
 echo 'on' > '/sys/bus/usb/devices/usb1/power/control';
-echo 'on' > '/sys/bus/usb/devices/1-3/power/control';
+echo 'on' > '/sys/bus/usb/devices/3-2/power/control';
 
-# disable nvidia card power save
+echo 'on' > '/sys/bus/usb/devices/3-4/power/control';
+echo 'disabled' > '/sys/bus/usb/devices/3-2/power/wakeup';
+
 echo 'on' > '/sys/bus/pci/devices/0000:01:00.0/power/control';
 
-echo '0' > '/proc/sys/vm/dirty_writeback_centisecs';
+# Turn off bluetooth powersave
+/usr/sbin/hciconfig hci0 up &> /dev/null &
 
-# stops autosuspend on steelseries mouse
-echo 'on' > '/sys/bus/usb/devices/1-3/power/control';
+echo '0' > '/proc/sys/vm/dirty_writeback_centisecs';

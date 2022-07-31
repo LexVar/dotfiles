@@ -53,6 +53,10 @@ export MP4GREP_MODEL=/opt/mp4grep-0.1.0/model
 export PLASMA_USE_QT_SCALING=1
 set PLASMA_USE_QT_SCALING 1
 
+# function conv {
+#     $(($(($1)) \* $(($(wget -qO- 'https://www.google.com/finance/quote/DKK-EUR' | grep -o 'data-last-price=\"0\..*\" data-last-normal' | grep -o '\".*\"' | sed 's/\"//g')))));
+# }
+
 # ----------------------
 # ----- MACHINES -------
 # ----------------------

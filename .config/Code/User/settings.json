@@ -26,5 +26,6 @@
         "/usr/lib64/python3.10/site-packages",
         "/home/avalente/.local/lib/python3.10/site-packages/"
     ],
-    "workbench.editor.untitled.hint": "hidden"
+    "workbench.editor.untitled.hint": "hidden",
+    "cmake.configureOnOpen": true
 }
