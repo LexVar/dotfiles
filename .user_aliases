@@ -4,18 +4,10 @@ export DOCS=$HOME/Documents
 # Vimwiki directory
 export VIMWIKI=$HOME/vimwiki
 
-# work school directory
-export WORK=$DOCS/MEIC
-export TESE=$DOCS/MEIC/Tese
-export DSI=$DOCS/DSI
-export MEIC=""
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
 alias docs="cd $DOCS"
-
-alias tese="cd $TESE"
-alias dsi="cd $DSI"
 
 alias vimwiki="cd $VIMWIKI"
 alias scripts="cd $SCRIPTS"
@@ -28,7 +20,7 @@ alias getsong="youtube-dl -x --audio-quality 0"
 alias open="xdg-open 2> /dev/null"
 
 alias workflow="~/.tmux/workflow.sh"
-alias brave-browser-stable="/usr/bin/brave-browser-stable --force-device-scale-factor"
+#alias brave-browser-stable="/usr/bin/brave-browser-stable --force-device-scale-factor"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias vimwikifiles='/usr/bin/git --git-dir=$VIMWIKI/.vimwiki/ --work-tree=$VIMWIKI'
@@ -36,26 +28,20 @@ alias vimwikifiles='/usr/bin/git --git-dir=$VIMWIKI/.vimwiki/ --work-tree=$VIMWI
 ## Git Aliases
 alias git-log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
-alias bfg="java -jar /usr/local/bin/bfg*.jar"
-
 # QR Code
 alias scan-qrcode=zbarimg
 
 export PULSE_LATENCY_MSEC=60
 
-export XDG_DATA_DIRS="/home/avalente/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/share/kde-settings/kde-profile/default/share:/usr/local/share:/usr/share"
-
-
-# mp4grep
-export MP4GREP_CACHE=/opt/mp4grep-0.1.0/.mp4grep_cache
-export MP4GREP_MODEL=/opt/mp4grep-0.1.0/model
+export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/share/kde-settings/kde-profile/default/share:/usr/local/share:/usr/share"
 
 export PLASMA_USE_QT_SCALING=1
 set PLASMA_USE_QT_SCALING 1
 
-# function conv {
-#     $(($(($1)) \* $(($(wget -qO- 'https://www.google.com/finance/quote/DKK-EUR' | grep -o 'data-last-price=\"0\..*\" data-last-normal' | grep -o '\".*\"' | sed 's/\"//g')))));
-# }
+## Git Aliases
+alias git-log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+export PATH="$PATH:/usr/local/go/bin"
 
 # ----------------------
 # ----- MACHINES -------

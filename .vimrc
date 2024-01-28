@@ -2,6 +2,11 @@
 "     set termguicolors
 " endif
 
+if !has('nvim')
+	set ttymouse=xterm2
+	tnoremap <Esc> <C-\><C-n>
+endif
+
 " Enable 256 colors
 set t_Co=256
 
@@ -60,13 +65,13 @@ let g:vimwiki_folding = 'expr'
 " Open files with 2 or higher headers folded
 set foldlevel=4
 
-" open nerdtree with ctrl + t 
+" open nerdtree with ctrl + s
 nnoremap <C-s> :NERDTreeToggle<CR>
 
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set noexpandtab
+set expandtab
 
 " set absolute numbers, disable relative numbers
 set nu
@@ -111,42 +116,27 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Split panels
-map <C-W>% :sp<CR>
-map <C-W>" :vsp<CR>
+map <C-W>" :sp<CR>
+map <C-W>% :vsp<CR>
 
 " shows current mode
 set showmode
-
-" disable preview
-let g:ycm_add_preview_to_completeopt = 0
-set completeopt-=preview
-
-let g:ycm_enable_diagnostic_signs = 0
-let g:ycm_enable_diagnostic_highlighting = 1
-let g:ycm_echo_current_diagnostic = 1
-
-" Maintain undo history between sessions
-set undofile
-set undodir=~/.vim/undodir
-" number of lines to save for undo
-set undoreload=70
-
-" don't connect to clipboard
-" set clipboard=exclude:.*
-" set clipboard=unnamedplus
 
 " copy to system clipboard with ctrl-c, paste with ctrl-v
 :inoremap <C-v> <ESC>"+pa
 :vnoremap <C-c> "+y
 :vnoremap <C-d> "+d
 
+" danish keyboard leader
+let mapleader = "½"
+
 " map fzf file finder to 'C-m'
-map <Leader>f :Files<cr>
+map <Leader>p :Files<cr>
 
 " H moves to the first non-blank character of the line
 " L moves to the last non-blank character of the line
-nnoremap H ^
-nnoremap L g_
+" nnoremap H ^
+" nnoremap L g_
 
 " map \ + space to clear selection
 nnoremap <Leader><Space> :noh<CR>
@@ -155,11 +145,13 @@ nnoremap <Leader><Space> :noh<CR>
 " map <C-left> :tabp<CR>
 " map <C-right> :tabn<CR>
 
-nmap <Left> gT
-nmap <Right> gt
+nnoremap H gT
+nnoremap L gt
+
+map <C-r> :redo<CR>
 
 " map <C-t> :tabnew<CR>:Files<CR>
-map <C-t> :tabnew<CR>
+" map <C-t> :tabnew<CR>
 
 " Create new tab with no name
 map <Leader>tt :tabedit<CR>
@@ -169,44 +161,16 @@ map <Leader>tt :tabedit<CR>
 map <Leader>te :tabnew<cr>:Files<cr>
 " Close all tabs but the active one
 map <Leader>to :tabonly<CR>
-map <Leader>tq :wqa<CR>
+map <Leader>tq :qa!<CR>
+map <Leader>c :q!<CR>
 
-" set spell spelllang=en_us,pt
-" autocmd FileType markdown setlocal spell
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
-map <Leader>se :setlocal spell! spelllang=en_us<CR>
-map <Leader>sp :setlocal spell! spelllang=pt<CR>
-nmap <F9> z=
-imap <F10> <c-g>u<Esc>[s1z=`]a<c-g>u
+let g:vim_tags_auto_generate = 1
+let g:vim_tags_use_language_field = 1
 
-" LaTeX (rubber) macro for compiling
-nnoremap <leader>lc :w<CR>:vertical terminal make<CR>
-
-" View PDF macro; '%:r' is current file's root (base) name.
-nnoremap <leader>lv :!okular main.pdf 2> /dev/null &<CR><CR>
-
-" SuperTab conf
-let g:SuperTabContextDefaultCompletionType = "<c-n>"
-let g:SuperTabDefaultCompletionType = "<c-n>"
-
-" ------------ OLD LATEX CONFIG ------------------
-" let g:vimtex_fold_enabled = 1
-" let g:tex_flavor = 'latex'
-
-" Enable completion where available.
-" This setting must be set before ALE is loaded.
-"
-" You should not turn this setting on if you wish to use ALE as a completion
-" source for other completion plugins, like Deoplete.
-" let g:ale_completion_enabled = 1
-
-" Write this in your vimrc file
-" let g:ale_lint_on_text_changed = 'never'
-" let g:ale_lint_on_insert_leave = 0
-" You can disable this option too
-" if you don't want linters to run on opening a file
-" let g:ale_lint_on_enter = 0
-
-" set omnifunc=ale#completion#OmniFunc
-" let g:ale_completion_autoimport = 1
-" ------------ ---------------- ------------------
+if has('persistent_undo')         "check if your vim version supports
+  set undodir=$HOME/.vim/undodir  "directory where the undo files will be stored
+  set undofile                    "turn on the feature
+endif
